@@ -30,9 +30,10 @@ function getIt() {
       alert('Your form is going to be submitted now.');
      })
    };
+
 function pressIt(){
-  $('input').on('spy', function(key) {
-    if (key.which == 71){
+  $('#typing').on('keydown', function(key) {
+    if (key.which === 71){
       alert('G was pressed');
     }
   });
